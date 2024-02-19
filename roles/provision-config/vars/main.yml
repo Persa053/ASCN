@@ -1,0 +1,10 @@
+pip_dependencies:
+  - requests
+  - google-auth
+
+dependencies:
+  - apt-transport-https
+  - ca-certificates
+  - gnupg
+  - curl
+  - python3-pip

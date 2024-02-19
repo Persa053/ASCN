@@ -1,0 +1,13 @@
+---
+- name: Create provision VM
+  hosts: localhost
+  gather_facts: false
+  roles:
+    - provision-create
+
+- name: Manage new instances
+  hosts: provision
+  gather_facts: false
+  become: True
+  roles:
+    - provision-config
